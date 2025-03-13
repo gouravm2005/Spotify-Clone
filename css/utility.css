@@ -1,0 +1,70 @@
+.border {
+ border: 2px solid red;
+}
+
+.flex {
+ display: flex;
+}
+
+.justify-content {
+ justify-content: center;
+}
+
+.align-content {
+ align-items: center;
+}
+
+.width {
+ width: 25px;
+}
+
+.padding {
+ padding: 7px 8px 0px 8px;
+}
+
+.bg-black {
+ background-color: black;
+}
+
+.bg-grey {
+ background-color: #121212;
+}
+
+.invert {
+ filter: invert(1);
+}
+
+.rounded {
+ border-radius: 50px;
+}
+
+.bg2 {
+ background-color: #1f1f1f;
+}
+
+.p2 {
+ padding: 15px;
+}
+
+.m2 {
+ margin: 5px;
+}
+
+.font-style1 {
+ font-size: clamp(6px, 14px, 16px);
+ font-weight: 700;
+}
+
+.font-style2 {
+ font-size: clamp(6px, 14px, 16px);
+ font-weight: 400;
+}
+
+.font-style3 {
+ font-size: 16px;
+ font-weight: 400;
+}
+
+.pointer-curser {
+ cursor: pointer;
+}

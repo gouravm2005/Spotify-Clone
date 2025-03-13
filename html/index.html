@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/utility.css">
+</head>
+
+<body>
+  <div class="body">
+  <div class="navbar bg-black">
+    <div class="nhome flex">
+      <div class="logo padding"><img class="invert" src="/svgs/logo.svg" alt="logo"></div>
+      <div class="home width padding bg-grey rounded"><img class="invert" src="/svgs/home.svg" alt="home"></div>
+      <div class="search width padding bg-grey rounded"><img class="invert" src="/svgs/search.svg" alt="search"></div>
+    </div>
+
+    <div class="account flex">
+      <div class="sign-up">Sign up</div>
+      <button class="login">Log in</button>
+    </div>
+  </div>
+
+  <div class="main flex">
+    <div class="left bg-grey">
+      <div class="library bg-grey p2 m2">
+        <div class="heading">
+          <img class="invert" src="/svgs/icon1.svg" alt="playlist">
+          <h3>Your Library</h3>
+        </div>
+        
+      </div>
+      <div class="playlist bg2 p2 m2 ">
+        <h2 class="font-style1">Create your first playlist</h2>
+        <p class="font-style2">It's easy, we'll help you</p>
+        <button>Create playlist</button>
+      </div>
+      <div class="podcast bg2 p2 m2 ">
+        <h2 class="font-style1">Let's find some podcasts to follow</h2>
+        <p class="font-style2">We'll keep you updated on new episodes</p>
+        <button>Browse podcasts</button>
+      </div>
+      <div class="outer p2 m2">
+        <div class="left-footer">
+              <div class="items">
+                <a href="https://www.spotify.com/in-en/legal/" id="" data-encore-id="textLink">
+                  <span>Legal</span>
+                </a>
+              </div>
+              <div class="items">
+                <a href="https://www.spotify.com/in-en/safetyandprivacy/" id="" data-encore-id="textLink">
+                  <span>Safety & Privacy Center</span>
+                </a>
+              </div>
+              <div class="items">
+                <a href="https://www.spotify.com/in-en/legal/privacy-policy/" id="" data-encore-id="textLink">
+                  <span>Privacy Policy</span>
+                </a>
+              </div>
+              <div class="items">
+                <a href="https://www.spotify.com/in-en/legal/cookies-policy/" id="" data-encore-id="textLink">
+                  <span>Cookies</span>
+                </a>
+              </div>
+              <div>
+                <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id="" data-encore-id="textLink">
+                  <span>About Ads</span>
+                </a>
+              </div>
+              <div class="items">
+                <a href="https://www.spotify.com/in-en/accessibility/" id="" data-encore-id="textLink">
+                  <span>Accessibility</span>
+                </a>
+              </div>
+              <div class="items">
+              <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">
+              <span>Cookies</span>
+            </a>
+          </div>
+       </div>
+          <div>
+            <button class="lang-btn">
+                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16">
+                  <path
+                    d="M8.152 16H8a8 8 0 1 1 .152 0zm-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296zM4.877 7.25c.062-1.771.34-3.386.773-4.624.099-.284.208-.554.329-.806a6.507 6.507 0 0 0-4.436 5.43h3.334zm-3.334 1.5a6.507 6.507 0 0 0 4.436 5.43 7.974 7.974 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624H1.543zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129H6.378zm5.048 0c-.061 1.771-.339 3.386-.772 4.624-.082.235-.171.46-.268.674a6.506 6.506 0 0 0 4.071-5.298h-3.03zm3.031-1.5a6.507 6.507 0 0 0-4.071-5.298c.097.214.186.44.268.674.433 1.238.711 2.853.772 4.624h3.031z">
+                  </path>
+                </svg>
+              English
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <div class="submain">
+      <div class="right bg-grey">
+       <div class="artists">
+        <div class="heading1">
+          <h2>Popular artists</h2>
+        </div>
+        <div class="artists-list">
+          <div class="artist nav-item" data-section="TempSongList">  
+            <img src="/images/img1.jpg" alt="img">
+            <p class="font-style3">Pritam </p>
+            <p class="font-style3">Artist</p>
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#00000" fill="none">
+                <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+            </div>      
+          </div>
+          <div class="artist nav-item" data-section="TempSongList">
+              <img src="/images/img2.jpg" alt="">
+              <p class="font-style3">Arijit Singh</p>
+              <p class="font-style3">Artist</p>
+          </div>
+          <div class="artist nav-item" data-section="TempSongList">
+              <img src="/images/img3.jpg" alt="">
+              <p class="font-style3">A.R Rahman</p>
+              <p class="font-style3">Artist</p>
+          </div>
+          <div class="artist nav-item" data-section="TempSongList">
+              <img src="/images/img4.jpg" alt="">
+              <p class="font-style3">Vishal-Shekhar</p>
+              <p class="font-style3">Artist</p>
+          </div>
+          <div class="artist nav-item" data-section="TempSongList">
+              <img src="/images/img5.jpg" alt="">
+              <p class="font-style3">Atif Aslam</p>
+              <p class="font-style3">Artist</p>
+          </div>
+          <div class="artist nav-item" data-section="TempSongList">
+              <img src="/images/img6.jpg" alt="">
+              <p class="font-style3">Vishal Mishra</p>
+              <p class="font-style3">Artist</p>
+          </div>
+        </div>
+       </div>
+  
+       <div class="albums">
+          <div class="heading2">
+            <h2>Popular albums and singles</h2>
+          </div>
+          <div class="album-list">
+            <div class="album nav-item" data-section="TempSongList">        
+            <img src="/images/img7.jpg" alt="img">
+              <p class="font-style3">Aashiqui 2</p>
+              <p class="font-style3">Mithoon,Ankit Tiwari,Jeet Gannguli</p>
+            </div>
+            <div class="album nav-item" data-section="TempSongList">
+                <img src="/images/img8.jpg" alt="">
+                <p class="font-style3">Sanam Teri Kasam</p>
+                <p class="font-style3">Himesh Reshammiya,Sameer Anjaan,Subrat Sinha
+                </p>
+            </div>
+            <div class="album nav-item" data-section="TempSongList">
+                <img src="/images/img9.jpg" alt="">
+                <p class="font-style3">Ye Jawani Hai Deewani</p>
+                <p class="font-style3">Pritam</p>
+            </div>
+            <div class="album nav-item" data-section="TempSongList">
+                <img src="/images/img10.jpg" alt="">
+                <p class="font-style3">Glory</p>
+                <p class="font-style3">Yo Yo Honey Singh</p>
+            </div>
+            <div class="album nav-item" data-section="TempSongList">
+                <img src="/images/img11.jpg" alt="">
+                <p class="font-style3">Mismatched Season 3 Soundtrack</p>
+                <p class="font-style3">Mismatched</p>
+            </div>
+            <div class="album nav-item" data-section="TempSongList">
+                <img src="/images/img12.jpg" alt="">
+                <p class="font-style3">Sahiba</p>
+                <p class="font-style3">Jasleen Royal,Stabin Ben, Vijay Deverakonda</p>
+            </div>
+          </div>
+       </div>
+  
+       <div class="radios">
+        <div class="heading2">
+          <h2>Popular radio</h2>
+        </div>
+        <div class="radio-list">
+          <div class="radio nav-item" data-section="TempSongList">        
+          <img src="/images/img13.jpg" alt="img">
+            <p class="font-style3">With Sachin-Jigar, Pritam, Amit Drivedi</p>
+          </div>
+          <div class="radio nav-item" data-section="TempSongList">
+              <img src="/images/img14.jpg" alt="">
+              <p class="font-style3">With Anirudh Ravichander, Harris Jayaraj, Yuvan Shankar Raja </p>
+          </div>
+          <div class="radio nav-item" data-section="TempSongList">
+              <img src="/images/img15.jpg" alt="">
+              <p class="font-style3">With A.R. Rahman, Vishal-Shekhar, Atif Aslam </p>
+          </div>
+          <div class="radio nav-item" data-section="TempSongList">
+              <img src="/images/img16.jpg" alt="">
+              <p class="font-style3">With Sachet Tandon, Darshan Raval, A.R. Rahman </p>
+          </div>
+          <div class="radio nav-item" data-section="TempSongList">
+              <img src="/images/img17.jpg" alt="">
+              <p class="font-style3">With Shubh, Karan Aujla, AP Dhillon </p>
+          </div>
+          <div class="radio nav-item" data-section="TempSongList">
+              <img src="/images/img18.jpg" alt="">
+              <p class="font-style3">With Varinder Brar, Karan Aujla, Shubh </p>
+          </div>
+        </div>
+       </div>
+  
+       <div class="charts">
+        <div class="heading2">
+          <h2>Featured Charts</h2>
+        </div>
+        <div class="charts-list">
+          <div class="chart nav-item" data-section="TempSongList">        
+          <img src="/images/img25.jpg" alt="img">
+            <p class="font-style3">Your weekly update of the most played tracks right now</p>
+          </div>
+          <div class="chart nav-item" data-section="TempSongList">
+              <img src="/images/img26.jpg" alt="">
+              <p class="font-style3">Your weekly update of the most played tracks right now</p>
+          </div>
+          <div class="chart nav-item" data-section="TempSongList">
+              <img src="/images/img27.jpg" alt="">
+              <p class="font-style3">Your daily update of the most played tracks right now</p>
+          </div>
+          <div class="chart nav-item" data-section="TempSongList">
+              <img src="/images/img28.jpg" alt="">
+              <p class="font-style3">Your daily update of the most played tracks right now </p>
+          </div>
+          <div class="chart nav-item" data-section="TempSongList">
+              <img src="/images/img29.jpg" alt="">
+              <p class="font-style3">Your daily update of the most viral tracks right now</p>
+          </div>
+          <div class="chart nav-item" data-section="TempSongList">
+              <img src="/images/img30.jpg" alt="">
+              <p class="font-style3">Your daily update of the most viral tracks right now</p>
+          </div>
+        </div>
+       </div>
+  
+       <div class="tracks">
+        <div class="heading2">
+          <h2>India's Best</h2>
+        </div>
+        <div class="tracks-list">
+          <div class="track nav-item" data-section="TempSongList">        
+          <img src="/images/img19.jpg" alt="img">
+            <p class="font-style3">Hottest tracks from your favourite I-Pop Icons </p>
+          </div>
+          <div class="track nav-item" data-section="TempSongList">
+              <img src="/images/img20.jpg" alt="">
+              <p class="font-style3">The finest set of Telugu music from the past 10 years</p>
+          </div>
+          <div class="track nav-item" data-section="TempSongList">
+              <img src="/images/img21.jpg" alt="">
+              <p class="font-style3">Playlist
+                Finest collection of Tamil Music from the past 10 years</p>
+          </div>
+          <div class="track nav-item" data-section="TempSongList">
+              <img src="/images/img22.jpg" alt="">
+              <p class="font-style3">Bollywood Central, jab baje toh seedha dil ke centre mein lage</p>
+          </div>
+          <div class="track nav-item" data-section="TempSongList">
+              <img src="/images/img23.jpg" alt="">
+              <p class="font-style3">Best of the Indian Indie scene. Cover</p>
+          </div>
+          <div class="track nav-item" data-section="TempSongList">
+              <img src="/images/img24.jpg" alt="">
+              <p class="font-style3">Ultimate 101 Punjabi Hits with Shubh</p>
+          </div>
+        </div>
+       </div>
+  
+       <div class="right-footer flex">
+        <div class="link">
+          <div class="list">
+            <ul>
+              <li><strong>Company</strong></li>
+              <li ><a href="https://www.spotify.com/in-en/about-us/contact/">About</a></li>
+              <li><a href="https://www.lifeatspotify.com/">Jobs</a></li>
+              <li><a href="https://newsroom.spotify.com/">For the Record</a></li>
+            </ul>
+          </div>
+          <div class="list">
+            <ul>
+              <li><strong>Communities</strong></li>
+              <li><a href="https://artists.spotify.com/">For Artists</a></li>
+              <li><a href="https://developer.spotify.com/">Developers</a></li>
+              <li><a href="https://ads.spotify.com/">Advertising</a></li>
+              <li><a href="https://investors.spotify.com/">Investors</a></li>
+              <li><a href="https://spotifyforvendors.com/">Vendors</a></li>
+            </ul>
+          </div>
+          <div class="list">
+            <ul>
+              <li><strong>Useful links</strong></li>
+              <li><a href="https://support.spotify.com/">Support</a></li>
+              <li><a href="https://www.spotify.com/in-en/free/">Free Mobile App</a></li>
+            </ul>
+          </div>
+          <div class="list">
+            <ul>
+              <li><strong>Spotify Plans</strong></li>
+              <li><a href="https://www.spotify.com/in-en/premium/#ref=spotifycom_footer_premium_individual">Premium Individual</a></li>
+              <li><a href="https://www.spotify.com/in-en/duo/#ref=spotifycom_footer_premium_duo">Premium Duo</a></li>
+              <li><a href="https://www.spotify.com/in-en/family/#ref=spotifycom_footer_premium_family">Premium Family</a></li>
+              <li><a href="https://www.spotify.com/in-en/student/#ref=spotifycom_footer_premium_student">Premium Student</a></li>
+              <li><a href="https://www.spotify.com/in-en/free/#ref=spotifycom_footer_free">Spotify Free</a></li>
+            </ul>
+          </div>
+        </div>
+       <div class="social">
+        <a href="https://www.instagram.com/spotify/"> <img src="/svgs/insta.svg"/></a>
+        <a href="https://x.com/spotify"><img src="/svgs/twitter.svg"/></a>
+        <a href="https://www.facebook.com/Spotify"><img src="/svgs/facebook.svg"/></a>
+       </div>
+       </div>
+  
+     
+      </div>
+    </div>
+  </div>
+ 
+</div>
+ <script src="/Js/script.js"></script>
+</body>
+
+</html>
