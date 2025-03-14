@@ -6,7 +6,7 @@ let currentIndex = 0;
 let section = "";
 
 async function getsongs(section) {
-  let a = await fetch(`http://127.0.0.1:3000/songs/${section}`);
+  let a = await fetch(`../songs/${section}`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
@@ -29,7 +29,7 @@ function playMusic(track) {
   currentTrack = track;
   currentIndex = songsList.indexOf(track);
 
-  audio.src = `http://127.0.0.1:3000/songs/${activesection}/${track}`;
+  audio.src = `../songs/${activesection}/${track}`;
   audio.play().then(() => {
     console.log(`Playing: ${track}`);
   }).catch(err => console.error("Audio playback error:", err));
@@ -133,7 +133,7 @@ window.onload = function () {
       let submain = document.querySelector(".submain");
       if (!submain) return;
 
-      let response = await fetch("http://127.0.0.1:3000/html/songs.html");
+      let response = await fetch("../html/songs.html");
       if (!response.ok) throw new Error("Network response was not ok");
 
       let data = await response.text();
@@ -160,7 +160,7 @@ window.onload = function () {
 
   let SignUp = document.querySelector(".sign-up");
   SignUp.addEventListener("click", async ()=>{
-   let response = await fetch("http://127.0.0.1:3000/html/signup.html")
+   let response = await fetch("../html/signup.html")
    let page = document.querySelector(".body");
    let data = await response.text();
    page.innerHTML = data;
@@ -168,7 +168,7 @@ window.onload = function () {
  
   let Login = document.querySelector(".login");
   Login.addEventListener("click", async ()=>{
-   let response = await fetch("http://127.0.0.1:3000/html/login.html")
+   let response = await fetch("../html/login.html")
    let page = document.querySelector(".body");
    let data = await response.text();
    page.innerHTML = data;
