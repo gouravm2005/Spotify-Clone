@@ -5,16 +5,23 @@ let songsList = [];
 let currentIndex = 0;
 let section = "";
 
-const songDatabase = {
-  TempSongList: [
-   "Auliya - Atif Aslam.mp3",
-    "Ghalat Fehmi - Superstar.mp3"
-  ]
-};
-
 async function getsongs(section) {
-  songsList = songDatabase[section] || [];
-  return songsList;
+  let a = await fetch(`./songs/${section}`);
+  let response = await a.text();
+  let div = document.createElement("div");
+  div.innerHTML = response;
+  let as = div.getElementsByTagName("a");
+  let songs = [];
+
+  for (let index = 0; index < as.length; index++) {
+    const element = as[index];
+    if (element.href.endsWith(".mp3")) {
+      songs.push(element.href.split(`/${section}/`)[1]);
+    }
+  }
+
+  songsList = songs;
+  return songs;
 }
 
 function playMusic(track) {
