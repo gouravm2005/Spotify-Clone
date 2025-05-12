@@ -5,23 +5,24 @@ let songsList = [];
 let currentIndex = 0;
 let section = "";
 
+const songDatabase = {
+  TempSongList: [
+    "Auliya - Atif Aslam.mp3",
+    "Ghalat Fehmi.mp3",
+    "Kabira - Arijit Singh.mp3",
+    "Kaise Hua - Vishal Mishra.mp3",
+    "Maiyya Mainu - Jersey.mp3",
+    "Mast Magan - Arijit Singh.mp3",
+    "Namo Namo - Kedarnath.mp3",
+    "Quafirana - Arijit Singh.mp3",
+    "Ranjha - Shershaah .mp3",
+    "Saibo - Sachin-Jigar.mp3"
+  ]
+};
+
 async function getsongs(section) {
-  let a = await fetch(`./songs/${section}`);
-  let response = await a.text();
-  let div = document.createElement("div");
-  div.innerHTML = response;
-  let as = div.getElementsByTagName("a");
-  let songs = [];
-
-  for (let index = 0; index < as.length; index++) {
-    const element = as[index];
-    if (element.href.endsWith(".mp3")) {
-      songs.push(element.href.split(`/${section}/`)[1]);
-    }
-  }
-
-  songsList = songs;
-  return songs;
+  songsList = songDatabase[section] || [];
+  return songsList;
 }
 
 function playMusic(track) {
